@@ -14,7 +14,7 @@ const Country = ({ country, handleVisited, handleNotVisited }) => {
   return (
     <>
       <div
-        className={`card bg-base-100 w-96 shadow-md ${
+        className={`card w-full bg-base-100 shadow-md ${
           isVisit ? 'bg-green-100' : ''
         }`}
       >

@@ -7,10 +7,10 @@ const App = () => {
     'https://openapi.programming-hero.com/api/all'
   ).then(res => res.json());
   return (
-    <div>
+    <div className="container mx-auto px-[5%] md:px-0">
       <Suspense
         fallback={
-          <div className="grid grid-cols-3 gap-5 container mx-auto mt-14">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-14 justify-center items-center">
             <Loading></Loading>
           </div>
         }

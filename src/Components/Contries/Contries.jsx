@@ -25,13 +25,13 @@ const Contries = ({ allContriesAPI }) => {
         <span className="text-green-400"> Visit: {visited.length}</span>
       </h3>
 
-      <div className="container mx-auto flex justify-center items-center flex-wrap gap-5 my-12">
+      <div className="container mx-auto flex justify-center items-center flex-wrap gap-5">
         {visited.map(visited => (
           <VisitedList visitedContry={visited}></VisitedList>
         ))}
       </div>
 
-      <div className="grid grid-cols-3 gap-5 container mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items-centers">
         {contries.map(country => (
           <Country
             key={country.cca3.cca3}
